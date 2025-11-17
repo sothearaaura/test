@@ -1,0 +1,231 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+    *{
+        padding: 0;
+        margin: 0;
+        box-sizing: border-box;
+    }
+    .navbar{
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding: 15px;
+        height: 70px;
+        background-color: rgb(218, 218, 140);
+    }
+    #logo{
+        width: 35px;
+        height: 35px;
+    }
+    .nav-list{
+        display: flex;
+        gap: 50px;
+        list-style: none;
+    }
+    .nav-list a{ 
+        text-decoration: none; color: #333 
+    }
+    #menu{
+        width: 35px;
+        height: 35px;
+    }
+    .product{
+        margin-top: 70px;
+        display: grid;
+        grid-template-columns: repeat(4,1fr);
+        gap: 30px;
+        margin: 70px 20px 0;
+        max-width: 1200px; 
+        padding: 0 16px; 
+        justify-items: center; 
+    }
+    .card{
+        width: 280px;
+        height: 400px;
+        background-color: antiquewhite;
+        padding-bottom: 100px;
+        box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 12px;
+        img{
+            width: 100%;
+            height: 100%;
+            box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 12px;
+        }
+        button{
+            width: 100%;
+            height: 30px;
+            background-color: rgb(227, 227, 160);
+            border: none;
+        }
+        .size{
+            display: flex;
+            align-items: center;
+            gap: 10px;
+        }
+        p{
+            padding: 5px;
+        }
+        .size button{
+            margin-right: 5px;
+            height: 20px;
+            width: 60px;
+            color: white;
+            background-color:grey;
+            border: none;
+        }
+        .title{
+            padding: 10px;
+            font-size: 18px;
+            font-weight: bold;
+        }
+    }
+    @media (max-width:1280px){
+        .menu-icon{
+            display: none;
+        }
+    }
+    @media (max-width:768px){
+        .product{
+            grid-template-columns: 1fr;
+            
+        }
+        .nav-list{ 
+            display: none 
+        }
+        .menu-icon{ 
+            display: flex 
+        }
+    }
+</style>
+<body>
+    <header class="navbar">
+        <div class="logo">
+            <i data-lucide="handbag" id="logo"></i>
+        </div>
+        <ul class="nav-list">
+            <li lass="nav-item">
+                <a href="">Home</a>
+            </li>
+            <li class="nav-item">
+                <a href="">Product</a>
+            </li>
+            <li class="nav-item">
+                <a href="">Contact</a>
+            </li>
+            <li class="nav-item">
+                <a href="">About</a>
+            </li>
+        </ul>
+        <div class="menu-icon">
+             <i data-lucide="menu" id="menu"></i>
+        </div>
+    </header>
+    <div class="product">
+        <div class="card">
+            <img src="https://i.pinimg.com/1200x/2b/a6/ca/2ba6cab761db8617c86c43d7e7266c8d.jpg" alt="">
+            <div class="size">
+                <p>Size</p>
+                <button>S</button>
+                <button>M</button>
+                <button>L</button>
+                <button>XL</button>
+            </div>
+            <div class="title">$10.00</div>
+            <button>Order Now</button>
+        </div>
+        <div class="card">
+            <img src="https://i.pinimg.com/736x/76/19/46/7619469ac3cab28f49b99930802990d2.jpg" alt="">
+            <div class="size">
+                <p>Size</p>
+                <button>S</button>
+                <button>M</button>
+                <button>L</button>
+                <button>XL</button>
+            </div>
+            <div class="title">$9.00</div>
+            <button>Order Now</button>
+        </div>
+        <div class="card">
+            <img src="https://i.pinimg.com/736x/5c/a1/2c/5ca12cbadf4b23f56772870812405f40.jpg" alt="">
+            <div class="size">
+                <p>Size</p>
+                <button>S</button>
+                <button>M</button>
+                <button>L</button>
+                <button>XL</button>
+            </div>
+            <div class="title">$7.00</div>
+            <button>Order Now</button>
+        </div>
+        <div class="card">
+            <img src="https://i.pinimg.com/736x/b5/17/8c/b5178cf0e1c1c30ae4fe3040223ac918.jpg" alt="">
+            <div class="size">
+                <p>Size</p>
+                <button>S</button>
+                <button>M</button>
+                <button>L</button>
+                <button>XL</button>
+            </div>
+            <div class="title">$8.00</div>
+            <button>Order Now</button>
+        </div>
+        <div class="card">
+            <img src="https://i.pinimg.com/1200x/9e/2e/37/9e2e3746cce42895f531776ffd87841a.jpg" alt="">
+            <div class="size">
+                <p>Size</p>
+                <button>S</button>
+                <button>M</button>
+                <button>L</button>
+                <button>XL</button>
+            </div>
+            <div class="title">$7.50</div>
+            <button>Order Now</button>
+        </div>
+        <div class="card">
+            <img src="https://i.pinimg.com/736x/e2/8d/a8/e28da8e36fca1d6c18d86f3e1361ae35.jpg" alt="">
+            <div class="size">
+                <p>Size</p>
+                <button>S</button>
+                <button>M</button>
+                <button>L</button>
+                <button>XL</button>
+            </div>
+            <div class="title">$15.00</div>
+            <button>Order Now</button>
+        </div>
+        <div class="card">
+            <img src="https://i.pinimg.com/1200x/29/af/e3/29afe3d365e05bf910a2ff7a1aa45f71.jpg" alt="">
+            <div class="size">
+                <p>Size</p>
+                <button>S</button>
+                <button>M</button>
+                <button>L</button>
+                <button>XL</button>
+            </div>
+            <div class="title">$20.00</div>
+            <button>Order Now</button>
+        </div>
+        <div class="card">
+            <img src="https://i.pinimg.com/1200x/ee/55/f5/ee55f5df73ae172d481e1d7613c096fa.jpg" alt="">
+            <div class="size">
+                <p>Size</p>
+                <button>S</button>
+                <button>M</button>
+                <button>L</button>
+                <button>XL</button>
+            </div>
+            <div class="title">$8.50</div>
+            <button>Order Now</button>
+        </div>
+    </div>
+    <script src="https://unpkg.com/lucide@latest"></script>
+  <script>
+    lucide.createIcons();
+  </script>
+</body>
+</html>
